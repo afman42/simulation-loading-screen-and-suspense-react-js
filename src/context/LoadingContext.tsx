@@ -10,13 +10,12 @@ export const LoadingProvider = ({
   children: React.ReactNode;
 }) => {
   const [loading, setLoading] = useState<boolean>(false);
-  const page = ["/", "/about"];
 
   const location = useLocation();
   const funcLoad = () => {
     //console.log(location);
     setLoading(true);
-    if (page.includes(location.pathname)) {
+    if (location.pathname !== "") {
       setTimeout(() => {
         setLoading(false);
       }, 2000);
