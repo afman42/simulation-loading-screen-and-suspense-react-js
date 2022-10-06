@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(226 232 240);
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
