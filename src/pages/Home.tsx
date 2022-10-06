@@ -5,7 +5,7 @@ import { CustomNavLink } from "../components";
 export default function Home(): ReactElement {
   return (
     <div className="center-div">
-      <CustomNavLink to="/about">About</CustomNavLink>
+      <CustomNavLink to="about">About</CustomNavLink>
     </div>
   );
 }
